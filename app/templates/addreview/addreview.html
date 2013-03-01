@@ -1,0 +1,34 @@
+
+<form id="addReviewForm" method="/reviews" action="post">
+    <div>
+        <h2>Enter a book review here:</h2>
+
+        <label class="newline">
+        <span class="prompt">title</span><input id="title" type="text" name="title" autofocus {#title}value="{title}"{/title}/>
+        <input type="button" id="search" value="Search Googles Library" />
+        
+        <span id="searchLoader" class="loader" style="display:none;"></span>
+        
+        <input type="button" id="manualEntry" value="I'll Enter Myself" />
+        </label>
+
+        <div style="display:none;">
+            <h3>Click the book if you see it below. Otherwise please refine and retry the search</h3>
+            <div id="booksSearchResults">
+            </div>
+        </div>
+
+        <div id="entryDetails" style="display: none;">
+            <label class="newline">
+            <span class="prompt">isbn</span><input id="isbn" type="text" name="isbn" placeholder="10 or 13 ok" {#isbn}value="{isbn}"{/isbn}/>
+            </label>
+
+
+            <label class="newline">
+            <span class="prompt">review</span><textarea id="review" name="review"></textarea>
+            
+            <input type="submit" id="save" value="Save this Review" />
+            </label>
+        </div>
+    </div>
+</form>

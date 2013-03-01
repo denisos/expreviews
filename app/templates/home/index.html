@@ -1,0 +1,18 @@
+
+
+<h2>The following are book reviews for books I've read recently</h2>
+
+{#reviews}
+    <div class="reviewContainer">
+        <a class="" href="#reviews/{isbn}">
+            <img src={thumbImg} class="bookReviewThumbImg">
+        </a>
+
+        <div>
+            <a class="" href="#reviews/{isbn}">{title}</a>
+        </div>
+    </div>
+{:else}
+    <h1>Sorry, no reviews to be found!</h1>
+{/reviews}
+

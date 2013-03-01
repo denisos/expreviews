@@ -1,0 +1,9 @@
+{>"layout.dust"/}
+
+{<content}
+    <div id="content">
+    </div>
+
+    <!-- bootstrap data here -->  {!turn off default escaping with pipe s!}  
+    <script type="text/plain" id="init_data" class="json-data">{reviews|s}</script>
+{/content}

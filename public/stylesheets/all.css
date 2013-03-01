@@ -1,0 +1,200 @@
+
+/* Globals */
+
+a {
+    text-decoration: none;
+    padding-bottom: 1px;
+}
+
+a:hover {
+    text-decoration: underline;    
+}
+
+a img {
+    border: none;
+}
+
+input, textarea {
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+
+.clear {
+    clear: both;
+}
+
+#content {
+    margin: auto;
+    width: 800px;
+}
+
+.loader {
+    height: 32px;
+    width: 32px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    background: url(/content/img/loader.gif) no-repeat;
+}
+
+
+/* Side navigation */
+.menu-container {
+    position:relative;
+    z-index:800;
+}
+
+.nav-holder {
+    position:absolute;
+    left:-100px;
+    width:265px;
+    height:50px;
+    cursor:pointer;
+}
+
+.outie-nav-text{
+    width:100px;
+    float:left;
+    height:46px;
+    text-align:right;
+    line-height:37px;
+    font-family:ProximaNova-Bold;
+    font-size:11px;
+    text-transform:uppercase;
+    padding-top:3px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+}
+    
+.nav-icon-holder {
+    text-align:right;
+    float:left;
+}
+    
+.nav-icon-off {
+}
+    
+.nav-icon-over {
+}
+    
+.nav-icon-on {
+}
+    
+.nav-icon{
+    display:none;
+}
+    
+.nav-pos-1 {
+    top:-2px;
+}
+.nav-pos-2 {
+    top:36px;
+}
+.nav-pos-3 {
+    top:74px;
+}
+.nav-pos-4 {
+    top:112px;
+}
+
+
+
+/* reviews list page */
+
+.addReview {
+    display: block;
+    padding: 30px 0 10px 0;
+}
+
+.reviewContainer {
+    min-height: 100px;
+    min-width: 150px;
+    float: left;
+    padding: 10px 0;
+}
+
+.bookReviewThumbImg {
+    height: 202px;
+    width: 135px;
+}
+
+
+/* save review form page */
+
+form    {
+    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    margin:auto;
+    position:relative;
+    width:600px;
+    min-height:400px;
+//    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+//    font-style: italic;
+//    line-height: 24px;
+//    font-weight: bold;
+//    color: #09C;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:10px;
+    border: 1px solid #999;
+    border: inset 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+form input    {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.newline {
+    display: block;
+    padding: 5px ;
+}
+
+label span {
+    padding-right: 10px;
+}
+
+#isbn {
+    width: 100px;
+}
+
+#title {
+    width: 250px;
+}
+
+textarea#review {
+    width:375px;
+    height:150px;
+    display: block;
+}
+
+/* search results */
+#booksSearchResults {
+    padding: 10px;
+}
+
+#booksSearchResults .bookContainer {
+    min-height: 115px;
+    min-width: 92px;
+    float: left;
+}
+
+.bookContainer {
+    min-height: 150px;
+    min-width: 120px;
+    float: left;
+}
+
+
+.bookThumbImg {
+    height: 110px;
+    width: 75px;
+}
+

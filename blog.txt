@@ -1,0 +1,31 @@
+
+
+For "my next trick" I'm going to convert the reviews app to use the express web framework and have it reuse the dust templates I'm already using with backbone.js
+
+- install express globally
+- create app scaffolding with express: 
+   express expreviews
+- that creates a new folder "expreviews" with a folder structure which express proscribes
+    expreviews
+       /public    (the apps public folder includes /javascript, /images and /stylesheets subfolders)
+       /routes    (express route mappings/definitions)
+       /views     (view template files)
+       app.js     (the node server code)
+       package.json 
+Since the existing review app organization is quite different from express default organization then I decided it would be best to conform to the express organization. You can do the other way around and set "views", express.static to match reviews app layout but I think doing it the "express way" is better when using express. It also highlights the contrasts more clearly.
+- I researched and am using consolidate.js to add in dust.js support. Consolidate.js is referenced on express FAQ and there's a simple example to follow for using with dust.js templates. 
+- npm install    
+- all ok
+- run node app.js and hit http://localhost:3000/  to see the default scaffolding index page
+
+Ok, so node running with jade template works ok. Lets change to use dust.js:
+1. add the dust libraries and consolidate to the package.json
+    "dustjs-linkedin": "*",
+    "dustjs-helpers": "*",
+    "consolidate": "*" 
+2. npm install 
+3. update app.js to include and use dust and consolidate (6 changes)
+4. create layout.dust and index.dust files under views (I copied from review app)
+5. change file paths to read from new express locations for images, css and js
+6. hit the page; ok loads aok
+7. 

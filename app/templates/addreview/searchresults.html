@@ -1,0 +1,13 @@
+
+{#books}
+    <div class="searchResultsContainer">
+        <a class="book" href="#books/{isbn}" id={isbn}>
+            <img src={thumbImg} class="searchBookThumbImg">
+        </a>
+
+        <!-- <span style="display: block">{title} {#subtitle}{subtitle}{/subtitle}</span> -->
+        
+    </div>
+{:else}
+    <h1>Sorry, no books found from Google for that title!</h1>
+{/books}
